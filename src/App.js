@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 // import Router from "./router/router";
 import "./App.css";
 import Home from "./components/Home";
@@ -9,13 +9,13 @@ import Sayembara from "./components/PorfolioOne";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <React.Fragment>
           <NavBar />
           <Home id="home" />
           <Sayembara id="sayembara" />
         </React.Fragment>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
