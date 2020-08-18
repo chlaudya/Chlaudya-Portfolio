@@ -1,26 +1,27 @@
-stages:
-  - test
-  - staging
+image: node:8.15.1
 
-test:
-  image: node:latest
-  stage: test
+stages:
+  - build
+  - production
+
+deploy-to-development:
+  type: build
   script:
     - npm install
-    - npm run test
+    - npm run build
   only:
-    - master
-  tags:
-    - docker
+    - feature/test
 
-staging:
-  stage: staging
+deploy-production:
+  type: deploy
+  stage: production
+  environment:
+    name: production
+    url: https://$HEROKU_PRODUCTION_APP.$DOMAIN_APP
   script:
     - apt-get update -qy
-    - apt-get install -y ruby-dev
+    - apt-get install -y ruby ruby-dev rubygems-integration
     - gem install dpl
-    - dpl --provider=heroku --app=${REPO_NAME} --api-key=${HEROKU_API}
+    - dpl --provider=heroku --app=$REPO_NAME --api-key=$HEROKU_API
   only:
     - master
-  tags:
-    - docker
