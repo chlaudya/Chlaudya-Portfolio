@@ -1,0 +1,24 @@
+.portfolio {
+  min-height: 100vh;
+  padding-top: 5%;
+  background-image: url(../images/portfolio-bg.png);
+  background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-size: cover;
+  .container {
+    border: 2px solid #e5e5e5;
+    text-align: left;
+    padding: 5% 1%;
+    svg {
+      height: 20px;
+    }
+    h1 {
+      font-family: "Abril Fatface", cursive;
+    }
+    h5 {
+      font-family: "Source Serif Pro", serif;
+      color: #b0b9c2;
+    }
+  }
+}

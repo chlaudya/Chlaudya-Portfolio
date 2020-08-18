@@ -1,0 +1,20 @@
+ul {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  li {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: silver;
+    cursor: pointer;
+  }
+  .txt {
+    padding-top: 10px;
+  }
+  .txt:hover {
+    color: #17a2b8;
+  }
+}

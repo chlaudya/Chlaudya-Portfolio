@@ -1,0 +1,45 @@
+.home {
+  background-image: url(../images/home-bg.png);
+  background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  &__about {
+    img {
+      opacity: 0.7;
+      width: 100%;
+      padding-top: 70%;
+    }
+    p {
+      font-family: "Source Serif Pro", serif;
+      color: #c1c9d1;
+      padding-top: 100%;
+    }
+    span {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #fff;
+      font-size: 2em;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .home {
+    &__about {
+      img {
+        padding: 0;
+      }
+      p {
+        color: #c1c9d1;
+        padding: 10px 0;
+      }
+      span {
+        color: #fff;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
