@@ -4,7 +4,7 @@ import "../assets/style/home.scss";
 import styled, { keyframes } from "styled-components";
 import { zoomIn, bounceInLeft } from "react-animations";
 
-const Home = ({ id }) => {
+const Home = ({ id, element }) => {
   const ZoomDiv = styled.div`
     animation: 2s ${keyframes`${zoomIn}`};
   `;
@@ -13,7 +13,7 @@ const Home = ({ id }) => {
   `;
 
   return (
-    <div className="home" id={id}>
+    <div className="home" id={id} ref={element}>
       <Container>
         <Row xs="1" sm="2" md="3">
           <Col className="home__about">
@@ -25,10 +25,10 @@ const Home = ({ id }) => {
             <ZoomDiv>
               <p>
                 <span>I'm Frontend Developer </span>
-                from Indonesia. With the background in Industrial Engineering,
-                my strength lies in how to build things using methods, tools and
-                components that are rigorous, effective, safe, efficient and
-                repeatable.
+                based in Indonesia. With the background in Industrial
+                Engineering, my strength lies in how to build things using
+                methods, tools and components that are rigorous, effective,
+                safe, efficient and repeatable.
               </p>
             </ZoomDiv>
           </Col>

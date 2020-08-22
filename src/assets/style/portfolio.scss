@@ -1,21 +1,61 @@
 .portfolio {
   min-height: 100vh;
-  padding-top: 5%;
+  padding-top: 2%;
   background-image: url(../images/portfolio-bg.png);
-  background-position: 50%;
-  background-position-x: 50%;
-  background-position-y: center;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
+  h1 {
+    font-family: "Pathway Gothic One", sans-serif;
+  }
+  .slider {
+    min-height: 100vh;
+    justify-content: center;
+  }
   .container {
     border: 2px solid #e5e5e5;
+    border-radius: 10px;
     text-align: left;
-    padding: 5% 1%;
+    height: auto;
+    padding: 4% 2%;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    a {
+      color: #1cc5df;
+    }
+    a:hover {
+      color: #ffffff;
+    }
     h1 {
       font-family: "Abril Fatface", cursive;
     }
     h5 {
       font-family: "Source Serif Pro", serif;
       color: #b0b9c2;
+    }
+    h6,
+    h4 {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 18px;
+    }
+    .list-group-item {
+      border: none;
+      background-color: transparent;
+      color: white;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .portfolio {
+    .container {
+      .list-group {
+        justify-content: center;
+      }
     }
   }
 }

@@ -1,8 +1,27 @@
-.App {
-  text-align: center;
+html {
+  overflow: scroll;
   overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
-
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+.App {
+  text-align: left;
+}
+.nav__item > .active {
+  border-bottom: 2px solid rgb(9, 167, 240);
+}
+.nav__item a {
+  color: azure;
+  text-decoration: none;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
