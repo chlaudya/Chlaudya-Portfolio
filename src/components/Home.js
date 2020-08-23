@@ -24,7 +24,7 @@ const Home = ({ id, element }) => {
           <Col className="home__about">
             <ZoomDiv>
               <p>
-                <span>I'm Frontend Developer </span>
+                <span>I'm a Frontend Developer </span>
                 based in Indonesia. With the background in Industrial
                 Engineering, my strength lies in how to build things using
                 methods, tools and components that are rigorous, effective,
@@ -36,8 +36,12 @@ const Home = ({ id, element }) => {
             <ZoomDiv>
               <p>
                 <br></br>
-                if you want to know more about me or my work feel free to
-                contact me on mamuaya.chlaudya@gmail.com *cheers
+                If you want to know more about me or my work feel free to email
+                me through{" "}
+                <a href="mailto:mamuaya.chlaudya@gmail.com">
+                  mamuaya.chlaudya@gmail.com
+                </a>{" "}
+                *cheers
               </p>
             </ZoomDiv>
           </Col>

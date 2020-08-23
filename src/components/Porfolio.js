@@ -45,7 +45,7 @@ const Portfolio = () => {
     {
       title: "Sayembara",
       description:
-        "Sayembara is a platform where you can expand your creativity enhance the design of your business venture and earn additional income.",
+        "Sayembara is a platform where you can expand your creativity, enhance the design of your business venture and earn additional income.",
       image: require("../assets/images/sayembara.png"),
       link: "http://sayembara-ga6.herokuapp.com/",
       github: "http://youtube.com",

@@ -60,9 +60,10 @@ const About = () => {
                 professional growth.
                 <br></br>
                 <br></br>I graduated from De La Salle University Manado with a
-                bachelor degree of Industrial Engineering in 2019, and have
-                continuously developed my skills and knowledge as a developer
-                over the years since.
+                Bachelors Degree in Industrial Engineering last October 2019.
+                And i have continuously developed my skills and knowledge as a
+                developer through various scholarship programs like Glints
+                Academy of Singapore.
               </p>
             </Desc>
           </Col>
