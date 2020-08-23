@@ -52,9 +52,23 @@
 }
 @media (max-width: 600px) {
   .portfolio {
+    height: auto;
+    .slider {
+      .previousButton {
+        padding: 0;
+      }
+      .nextButton {
+        padding: 0;
+      }
+    }
     .container {
+      height: auto;
+      padding: 2%;
       .list-group {
         justify-content: center;
+        .list-group-item {
+          padding: 0;
+        }
       }
     }
   }
