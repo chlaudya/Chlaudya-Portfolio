@@ -56,7 +56,7 @@ const NavBar = ({ sticky }) => {
             duration={1500}
           >
             <Button color="info" style={{ fontSize: "20px" }}>
-              Hire Me
+              <a href="mailto:mamuaya.chlaudya@gmail.com">Hire Me</a>
             </Button>
           </Link>
         </li>

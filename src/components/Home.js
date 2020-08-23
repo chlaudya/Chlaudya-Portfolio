@@ -41,7 +41,6 @@ const Home = ({ id, element }) => {
                 <a href="mailto:mamuaya.chlaudya@gmail.com">
                   mamuaya.chlaudya@gmail.com
                 </a>{" "}
-                *cheers
               </p>
             </ZoomDiv>
           </Col>

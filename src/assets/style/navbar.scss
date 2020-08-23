@@ -2,10 +2,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 2.5rem 1rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   position: absolute;
   z-index: 1;
   width: 100%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  // padding: 2rem 2.5rem 1rem 2.5rem;
+  // position: absolute;
+  // z-index: 1;
+  // width: 100%;
   &__logo {
     display: flex;
     align-items: center;
@@ -14,16 +21,19 @@
     font-family: "Pathway Gothic One", sans-serif;
     width: 2rem;
     height: 1rem;
-    margin-left: 10%;
+    margin-left: 5%;
     animation: rotate 0.7s ease-in-out 0.5s;
   }
   ul {
-    position: fixed;
-    float: right;
-    width: 100%;
-    z-index: 10;
+    margin: 0 1rem 0.4rem 0;
+    padding: 0 0.3rem;
+    cursor: pointer;
+    // position: fixed;
+    // float: right;
+    // width: 100%;
+    // z-index: 10;
     display: flex;
-    margin-left: 65%;
+    // margin-left: 65%;
     li {
       font-family: "Pathway Gothic One", sans-serif;
       font-weight: 400;

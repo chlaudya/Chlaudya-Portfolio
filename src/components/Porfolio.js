@@ -48,23 +48,23 @@ const Portfolio = () => {
         "Sayembara is a platform where you can expand your creativity, enhance the design of your business venture and earn additional income.",
       image: require("../assets/images/sayembara.png"),
       link: "http://sayembara-ga6.herokuapp.com/",
-      github: "http://youtube.com",
+      github: "#",
     },
     {
       title: "Movie App",
       description:
         "Find,Read reviews, give ratings and leave a review for your favorite movie. ",
       image: require("../assets/images/movie-app.png"),
-      link: "http://google.com",
-      github: "http://google.com",
+      link: "#",
+      github: "#",
     },
     {
       title: "Todo App",
       description:
         "Sometimes our stop-doing list needs to be bigger than our to-do list. Let's Create your todo list! ",
       image: require("../assets/images/todo-app.png"),
-      link: "http://google.com",
-      github: "http://google.com",
+      link: "#",
+      github: "#",
     },
   ];
   return (
