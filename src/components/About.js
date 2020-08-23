@@ -51,17 +51,17 @@ const About = () => {
             <Desc>
               <p>
                 Hello! I'm Chlaudya Mamuaya . . . .<br></br>
-                <br></br>I'm a web developer who is passionate of creating
+                <br></br>I'm a Web Developer who is passionate of creating
                 corporate - centered websites with trendy and friendly designs.
                 At the same time, I am a flexible and extrovert Engineer who is
-                fond of collaborating with teams in designing products. Because
-                I believe that the synergy of a team creates a healthy working
-                environment which is very conducive for learning and
-                professional growth.
+                fond of collaborating and working with a team in designing
+                products. Because I believe that the synergy of a team, creates
+                a healthy working environment which is very conducive for
+                learning and professional growth.
                 <br></br>
                 <br></br>I graduated from De La Salle University Manado with a
                 Bachelors Degree in Industrial Engineering last October 2019.
-                And i have continuously developed my skills and knowledge as a
+                And I have continuously developed my skills and knowledge as a
                 developer through various scholarship programs like Glints
                 Academy of Singapore.
               </p>

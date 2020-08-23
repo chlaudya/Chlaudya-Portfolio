@@ -53,7 +53,7 @@ const Portfolio = () => {
     {
       title: "Movie App",
       description:
-        "Find,Read reviews, give ratings and leave a review for your favorite movie. ",
+        "Explore and read movie reviews of your kind, provide outstanding ratings and leave great reviews on your favorite movies ",
       image: require("../assets/images/movie-app.png"),
       link: "#",
       github: "#",
@@ -61,7 +61,7 @@ const Portfolio = () => {
     {
       title: "Todo App",
       description:
-        "Sometimes our stop-doing list needs to be bigger than our to-do list. Let's Create your todo list! ",
+        "Sometimes our stop-doing list needs to be longer than our to-do list. Start and create your Todo List with Todo App! ",
       image: require("../assets/images/todo-app.png"),
       link: "#",
       github: "#",
