@@ -2,7 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "../assets/style/home.scss";
 import styled, { keyframes } from "styled-components";
-import { zoomIn, bounceInLeft } from "react-animations";
+import { zoomIn, bounceInLeft, bounceIn } from "react-animations";
+import { Link } from "react-scroll";
+import { Button } from "reactstrap";
 
 const Home = ({ id, element }) => {
   const ZoomDiv = styled.div`
@@ -11,14 +13,21 @@ const Home = ({ id, element }) => {
   const BouncyDiv = styled.div`
     animation: 2s ${keyframes`${bounceInLeft}`};
   `;
-
+  const BouncyButton = styled.div`
+    animation: 4s ${keyframes`${bounceIn}`};
+  `;
   return (
     <div className="home" id={id} ref={element}>
       <Container>
-        <Row xs="1" sm="2" md="3">
+        <Row xs="1" sm="1" md="3">
           <Col className="home__about">
             <BouncyDiv>
-              <img src={require("../assets/images/Chlau.png")} alt="Chlaudya" />
+              <div className="home__about__logo">
+                <img
+                  src={require("../assets/images/Chlau.png")}
+                  alt="Chlaudya"
+                />
+              </div>
             </BouncyDiv>
           </Col>
           <Col className="home__about">
@@ -43,6 +52,18 @@ const Home = ({ id, element }) => {
                 </a>{" "}
               </p>
             </ZoomDiv>
+            <BouncyButton delay={2000}>
+              <Link
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={5}
+                duration={1500}
+              >
+                <Button>Check Out My Work </Button>
+              </Link>
+            </BouncyButton>
           </Col>
         </Row>
       </Container>

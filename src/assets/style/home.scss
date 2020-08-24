@@ -8,6 +8,10 @@
   min-height: 100vh;
   position: relative;
   &__about {
+    a {
+      color: #c1c9d1;
+      text-decoration-style: solid;
+    }
     img {
       opacity: 0.7;
       width: 100%;
@@ -25,17 +29,34 @@
       color: #fff;
       font-size: 2em;
     }
+    .btn-secondary {
+      background-color: #ffa7c4;
+      box-shadow: 0 0.4rem #d77f9c;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      line-height: 1;
+      cursor: pointer;
+      color: #09162a;
+      border: none;
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 1.1em;
+    }
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 800px) {
   .home {
     &__about {
+      margin: 0 auto;
       img {
+        margin: 10vh 20% 0 20%;
         padding: 0;
+        width: 50%;
+        text-align: center;
       }
       p {
         color: #c1c9d1;
-        padding: 10px 0;
+        padding: 0;
+        margin: 0;
       }
       span {
         color: #fff;
