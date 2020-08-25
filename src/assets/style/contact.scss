@@ -1,0 +1,91 @@
+.contact {
+  min-height: 100vh;
+  padding-top: 2%;
+  background-image: url(../images/contact-bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .container {
+    height: auto;
+  }
+  &__title {
+    text-align: center;
+    font-family: "Abril Fatface", cursive;
+    color: palevioletred;
+    font-size: 3.5em;
+  }
+  .row {
+    margin: 7%;
+  }
+  a {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 2em;
+  }
+  &__icon:hover {
+    color: rgba(216, 157, 187, 0.795);
+  }
+  &__icon {
+    color: rgba(243, 39, 107, 0.63);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #415164e5;
+  color: rgba(255, 255, 255, 0.774);
+  text-align: center;
+  p {
+    font-family: "Source Serif Pro", serif;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    .container {
+      height: auto;
+    }
+    &__title {
+      margin-top: 10%;
+      font-size: 2.3em;
+    }
+    h2 {
+      font-size: 0.7em;
+    }
+    &__icon:hover {
+      color: rgba(216, 157, 187, 0.795);
+    }
+    &__icon {
+      color: rgba(243, 39, 107, 0.63);
+      width: 70px;
+      height: 70px;
+      position: relative;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .footer {
+      p {
+        font-family: "Pathway Gothic One", sans-serif;
+      }
+    }
+  }
+}

@@ -59,9 +59,11 @@ const NavBar = ({ sticky }) => {
               offset={0}
               duration={1500}
             >
-              <Button color="info" style={{ fontSize: "20px" }}>
-                <a href="mailto:mamuaya.chlaudya@gmail.com">Hire Me</a>
-              </Button>
+              <a href="https://drive.google.com/file/d/1XlUsiFyf5InaIpYZ4rwScX_mXrec8yvv/view?usp=sharing">
+                <Button color="info" style={{ fontSize: "20px" }}>
+                  Resume
+                </Button>
+              </a>
             </Link>
           </li>
         </ul>

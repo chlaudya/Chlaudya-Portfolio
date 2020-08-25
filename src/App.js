@@ -8,6 +8,7 @@ import Portfolio from "./components/Porfolio";
 import "animate.css/animate.min.css";
 import useSticky from "./components/useSticky";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   library.add(fab);
@@ -19,6 +20,7 @@ function App() {
         <Home id="home" element={element} />
         <About id="about" />
         <Portfolio id="portfolio" />
+        <Contact id="contact" />
       </React.Fragment>
     </div>
   );

@@ -11,7 +11,7 @@ const Home = ({ id, element }) => {
     animation: 2s ${keyframes`${zoomIn}`};
   `;
   const BouncyDiv = styled.div`
-    animation: 2s ${keyframes`${bounceInLeft}`};
+    animation: 1s ${keyframes`${bounceInLeft}`};
   `;
   const BouncyButton = styled.div`
     animation: 4s ${keyframes`${bounceIn}`};

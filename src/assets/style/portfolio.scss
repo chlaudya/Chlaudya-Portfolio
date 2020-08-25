@@ -50,7 +50,7 @@
     }
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .portfolio {
     height: auto;
     .slider {
@@ -63,11 +63,21 @@
     }
     .container {
       height: auto;
-      padding: 2%;
+      padding: 5% 7%;
+      h1 {
+        font-size: 1.3em;
+      }
+      h5 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.7em;
+      }
       .list-group {
         justify-content: center;
         .list-group-item {
           padding: 0;
+          padding: 0 5%;
         }
       }
     }

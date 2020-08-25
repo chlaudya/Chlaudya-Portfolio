@@ -10,6 +10,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ReactComponent as Antdicon } from "../assets/images/antdesign.svg";
 import { ReactComponent as Materialicon } from "../assets/images/material-ui.svg";
+import { ReactComponent as Reduxicon } from "../assets/images/redux.svg";
 
 const About = () => {
   const Desc = withReveal(
@@ -74,19 +75,6 @@ const About = () => {
                 Academy of Singapore.
               </p>
             </Desc>
-            {/* <Button outline color="info">
-              {" "}
-              <Link
-                activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-0}
-                duration={1500}
-              >
-                Home
-              </Link>
-            </Button> */}
             <IconAnimation>
               <p>Some languages and technologies in my toolbox:</p>
               <ul className="about__skills">
@@ -110,6 +98,16 @@ const About = () => {
                     className="skill__icon"
                   />
                   <span>JavaScript</span>
+                </li>
+                <li className="about__skill">
+                  <Reduxicon
+                    style={{
+                      height: "16px",
+                      width: "16px",
+                    }}
+                    className="skill__icon"
+                  />
+                  <span>Redux</span>
                 </li>
                 <li className="about__skill">
                   <FontAwesomeIcon
