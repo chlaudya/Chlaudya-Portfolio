@@ -32,7 +32,7 @@ const NavBar = ({ sticky }) => {
               to="about"
               spy={true}
               smooth={true}
-              offset={5}
+              offset={0}
               duration={1500}
             >
               About
@@ -44,10 +44,22 @@ const NavBar = ({ sticky }) => {
               to="portfolio"
               spy={true}
               smooth={true}
-              offset={5}
+              offset={0}
               duration={1500}
             >
               Portfolio
+            </Link>
+          </li>
+          <li className="nav__item txt">
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1500}
+            >
+              Contact
             </Link>
           </li>
           <li className="nav__item">
@@ -60,9 +72,7 @@ const NavBar = ({ sticky }) => {
               duration={1500}
             >
               <a href="https://drive.google.com/file/d/1XlUsiFyf5InaIpYZ4rwScX_mXrec8yvv/view?usp=sharing">
-                <Button color="info" style={{ fontSize: "20px" }}>
-                  Resume
-                </Button>
+                <Button color="info">Resume</Button>
               </a>
             </Link>
           </li>

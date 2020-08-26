@@ -15,18 +15,33 @@ const Contact = () => {
     `,
     <Fade left delay={2500} />
   );
+  const Descanimation = withReveal(
+    styled.h5`
+      text-align: center;
+    `,
+    <Fade top delay={2000} />
+  );
   return (
     <div className="contact">
       <Container>
         <Row>
           <Col>
             <Bounce left cascade delay={1500}>
-              <h1 className="contact__title">Find Me on</h1>
+              <h1 className="contact__title">
+                Don't be a stranger <br></br> <span>just say hello.</span>
+              </h1>
             </Bounce>
+            <Descanimation>
+              <h5 className="contact__desc">
+                Feel free to get in touch with me. I am always open to
+                discussing new projects, creative ideas or opportunities to be
+                part of your visions.
+              </h5>
+            </Descanimation>
           </Col>
         </Row>
         <Row xs="1" md="3">
-          <Col md={{ size: 4 }}>
+          <Col md={{ size: 3 }}>
             <Iconanimation>
               <a href="https://www.linkedin.com/in/chlaudya-margareta-mamuaya-a50434118/">
                 <FontAwesomeIcon
@@ -38,7 +53,7 @@ const Contact = () => {
               </a>
             </Iconanimation>
           </Col>
-          <Col md={{ size: 4 }}>
+          <Col md={{ size: 3 }}>
             <Iconanimation>
               <a href="https://github.com/chlaudya">
                 <FontAwesomeIcon
@@ -50,7 +65,19 @@ const Contact = () => {
               </a>
             </Iconanimation>
           </Col>
-          <Col md={{ size: 4 }}>
+          <Col md={{ size: 3 }}>
+            <Iconanimation>
+              <a href="https://www.instagram.com/chmamuaya/">
+                <FontAwesomeIcon
+                  icon={["fab", "instagram-square"]}
+                  className="contact__icon"
+                  style={{ width: "100%" }}
+                />
+                <h2>Instagram</h2>
+              </a>
+            </Iconanimation>
+          </Col>
+          <Col md={{ size: 3 }}>
             <Iconanimation>
               <a href="mailto:mamuaya.chlaudya@gmail.com">
                 <FontAwesomeIcon
@@ -63,12 +90,12 @@ const Contact = () => {
             </Iconanimation>
           </Col>
         </Row>
-        <div className="footer">
-          <p>
-            <Copyright /> 2020 Designed & developed by Chlaudya Mamuaya
-          </p>
-        </div>
       </Container>
+      <div className="footer">
+        <p>
+          <Copyright /> 2020 Designed & developed by Chlaudya Mamuaya
+        </p>
+      </div>
     </div>
   );
 };

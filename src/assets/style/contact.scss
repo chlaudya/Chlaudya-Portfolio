@@ -1,6 +1,5 @@
 .contact {
   min-height: 100vh;
-  padding-top: 2%;
   background-image: url(../images/contact-bg.jpg);
   background-position: center center;
   background-attachment: fixed;
@@ -8,7 +7,10 @@
   background-size: cover;
   position: relative;
   .container {
-    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   &__title {
     text-align: center;
@@ -16,8 +18,17 @@
     color: palevioletred;
     font-size: 3.5em;
   }
+  &__desc {
+    font-family: "Pathway Gothic One", sans-serif;
+    color: rgba(252, 252, 252, 0.808);
+    text-align: center;
+    padding: 2% 20%;
+  }
+  span {
+    color: rgba(240, 228, 232, 0.884);
+  }
   .row {
-    margin: 7%;
+    margin: 0 10%;
   }
   a {
     text-align: center;
@@ -61,9 +72,17 @@
     .container {
       height: auto;
     }
+    .row {
+      margin: 0 5%;
+    }
     &__title {
       margin-top: 10%;
-      font-size: 2.3em;
+      font-size: 1.7em;
+    }
+    &__desc {
+      font-size: 1em;
+      padding: 2% 0;
+      text-align: justify;
     }
     h2 {
       font-size: 0.7em;
@@ -73,14 +92,17 @@
     }
     &__icon {
       color: rgba(243, 39, 107, 0.63);
-      width: 70px;
-      height: 70px;
+      width: 50px;
+      height: 50px;
       position: relative;
       -webkit-transition-duration: 0.4s; /* Safari */
       transition-duration: 0.4s;
       text-decoration: none;
       overflow: hidden;
       cursor: pointer;
+    }
+    a {
+      font-size: 1.5em;
     }
     .footer {
       p {
