@@ -16,6 +16,10 @@ import "react-animated-slider/build/horizontal.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Portfolio = () => {
+  function resizeIframe(obj) {
+    obj.style.height = 0;
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
+  }
   const Title = withReveal(
     styled.h1`
       font-size: 1.5em;
@@ -47,7 +51,8 @@ const Portfolio = () => {
       title: "Sayembara",
       description:
         "Sayembara is a platform where you can expand your creativity, enhance the design of your business venture and earn additional income.",
-      image: "https://www.youtube.com/embed/xCECMFUDp70",
+      iframe: "https://www.youtube.com/embed/xCECMFUDp70",
+      image: "",
       link: "http://sayembara-ga6.herokuapp.com/",
       gitlab: "https://gitlab.com/glints-academy-6/team-e/front-end",
     },
@@ -147,24 +152,23 @@ const Portfolio = () => {
                     </List>
                   </Col>
                   <Col md={{ size: 7 }}>
-                    {/* <Fade right delay={2500}>
-                      <img
-                        src={slide.image}
-                        alt="portfolio"
-                        style={{ width: "100%" }}
-                      />
-                    </Fade> */}
-                    <iframe
-                      width="100%"
-                      height="100%"
-                      className="iframe"
-                      title="symbr"
-                      src={slide.image}
-                      frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                      scrolling="no"
-                    ></iframe>
+                    <Fade right delay={2500}>
+                      <img src={slide.image} alt="" style={{ width: "100%" }} />
+                    </Fade>
+                    {slide.image === "" ? (
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        id="iframe"
+                        title="sayembara"
+                        src={slide.iframe}
+                        frameborder="0"
+                        allow="fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        scrolling="no"
+                      ></iframe>
+                    ) : (
+                      ""
+                    )}
                   </Col>
                 </Row>
               </Container>

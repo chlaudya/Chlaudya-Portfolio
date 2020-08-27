@@ -156,9 +156,9 @@ const About = () => {
             </IconAnimation>
           </Col>
           <Col md={{ size: 6 }}>
-            <Image>
+            <Fade bottom delay={3000}>
               <img alt="chlaudya" src={require("../assets/images/me.png")} />
-            </Image>
+            </Fade>
           </Col>
         </Row>
       </Container>
