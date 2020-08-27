@@ -47,7 +47,7 @@ const Portfolio = () => {
       title: "Sayembara",
       description:
         "Sayembara is a platform where you can expand your creativity, enhance the design of your business venture and earn additional income.",
-      image: require("../assets/images/sayembara.png"),
+      image: "https://www.youtube.com/embed/xCECMFUDp70",
       link: "http://sayembara-ga6.herokuapp.com/",
       gitlab: "https://gitlab.com/glints-academy-6/team-e/front-end",
     },
@@ -147,13 +147,24 @@ const Portfolio = () => {
                     </List>
                   </Col>
                   <Col md={{ size: 7 }}>
-                    <Fade right delay={2500}>
+                    {/* <Fade right delay={2500}>
                       <img
                         src={slide.image}
                         alt="portfolio"
                         style={{ width: "100%" }}
                       />
-                    </Fade>
+                    </Fade> */}
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      className="iframe"
+                      title="symbr"
+                      src={slide.image}
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                      scrolling="no"
+                    ></iframe>
                   </Col>
                 </Row>
               </Container>
