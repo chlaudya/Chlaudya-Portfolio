@@ -33,9 +33,9 @@ const Contact = () => {
             </Bounce>
             <Descanimation>
               <h5 className="contact__desc">
-                Feel free to get in touch with me. I am always open to
-                discussing new projects, creative ideas or opportunities to be
-                part of your visions.
+                Feel free to get in touch with me. I am always open to discuss
+                new projects, creative ideas or opportunities to be part of your
+                vision.
               </h5>
             </Descanimation>
           </Col>
