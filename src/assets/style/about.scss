@@ -12,8 +12,8 @@
     padding: 0;
     display: grid;
     // grid-template-columns: repeat(3, minmax(140px, 200px));
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     margin-top: 5px;
   }
   &__skill {

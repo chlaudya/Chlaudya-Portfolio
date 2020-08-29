@@ -73,6 +73,10 @@ const Portfolio = () => {
       gitlab: "https://gitlab.com/chlaudya_m/todos-project",
     },
   ];
+  function resizeIframe(obj) {
+    obj.style.height = 0;
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
+  }
   return (
     <div className="portfolio">
       <Zoom>
@@ -157,8 +161,7 @@ const Portfolio = () => {
                     </Fade>
                     {slide.image === "" ? (
                       <iframe
-                        style={{ width: "1px", minWidth: "100%" }}
-                        height="100%"
+                        onload={resizeIframe}
                         id="iframe"
                         title="sayembara"
                         src={slide.iframe}
