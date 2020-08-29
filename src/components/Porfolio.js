@@ -157,7 +157,7 @@ const Portfolio = () => {
                     </Fade>
                     {slide.image === "" ? (
                       <iframe
-                        width="100%"
+                        style={{ width: "1px", minWidth: "100%" }}
                         height="100%"
                         id="iframe"
                         title="sayembara"
