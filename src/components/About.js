@@ -35,7 +35,7 @@ const About = () => {
     styled.p`
       font-size: 1.1em;
     `,
-    <Fade bottom delay={3500} />
+    <Fade bottom delay={2500} />
   );
   return (
     <div className="about">

@@ -26,7 +26,7 @@ const Portfolio = () => {
       text-align: left;
       color: palevioletred;
     `,
-    <Fade left delay={1000} />
+    <Fade left />
   );
   const Desc = withReveal(
     styled.h5`

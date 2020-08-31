@@ -34,10 +34,10 @@ const Home = ({ id, element }) => {
             <ZoomDiv>
               <p>
                 <span>I'm a Frontend Developer </span>
-                based in Indonesia. With the background in Industrial
-                Engineering, my strength lies in how to build things using
-                methods, tools and components that are rigorous, effective,
-                safe, efficient and repeatable.
+                based in Indonesia, with a background in Industrial Engineering.
+                My strength lies on how to build things using methods, tools and
+                components which are accurate, effective, safe, efficient and
+                sustainable.
               </p>
             </ZoomDiv>
           </Col>
